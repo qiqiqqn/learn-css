@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编写可维护的css</title>
+    <style>
+        .button-example_group1 {
+            padding: 6px 16px;
+            border: 1px solid #446d88;
+            background: #58a linear-gradient(#77a0bb, #58a);
+            border-radius: 4px;
+            box-shadow: 0 1px 5px gray;
+            color: white;
+            text-shadow: 0 -1px 1px #335166;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .button-example_group1--large {
+            padding: 10px 25px;
+            border: 1px solid #446d88;
+            background: #58a linear-gradient(#77a0bb, #58a);
+            border-radius: 7px;
+            box-shadow: 0 2px 8px gray;
+            color: white;
+            text-shadow: 0 -2px 2px #335166;
+            font-size: 32px;
+            line-height: 48px;
+        }
+        .button-example_group1--red {
+            padding: 6px 16px;
+            border: 1px solid #b80703;
+            background: #c00 linear-gradient(#d94640, #c00);
+            border-radius: 4px;
+            box-shadow: 0 1px 5px gray;
+            color: white;
+            text-shadow: 0 -1px 1px #bd443d;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .button-example_group2 {
+            padding: 6px 16px;
+            border: 1px solid #446d88;
+            background: #58a linear-gradient(#77a0bb, #58a);
+            border-radius: 4px;
+            box-shadow: 0 1px 5px gray;
+            color: white;
+            text-shadow: 0 -1px 1px #335166;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .button-example_group2--large {
+
+        }
+        .button-example_group2--red {
+
+        }
+        .button-example_group3 {
+            padding: 0.3em 0.8em;
+            border: 1px solid #446d88;
+            background: #58a linear-gradient(rgba(255,255,255,0.2), transparent);
+            border-radius: 0.2em;
+            box-shadow: 0 0.05em 0.25em rgba(0,0,0,0.5);
+            color: white;
+            text-shadow: 0 -0.05em 0.05em rgba(0,0,0,0.5);
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+        .button-example_group3--large {
+            font-size: 2rem;
+        }
+        .button-example_group3--red {
+            border-color: #b80401;
+            background-color: #c00;
+        }
+        .button-example_background-box--gray {
+            margin: 16px 0;
+            padding: 16px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>开发一些公共的button，需要有基础类型的，还有放大的，还有可以支持多个背景颜色的</h2>
+        <h3>案例一：</h3>
+        <button class="button-example_group1">Yes!</button>
+        <button class="button-example_group1--large">Yes!</button>
+        <button class="button-example_group1--red">Cancel</button>
+<!--        <div class="button-example_background-box--gray">-->
+<!--            <button class="example-group1_button">Yes!</button>-->
+<!--            <button class="example-group1_button&#45;&#45;red">Cancel</button>-->
+<!--        </div>-->
+        <h3>案例二：</h3>
+        <button class="button-example_group2">Yes!</button>
+        <button class="button-example_group2 button-example_group2--large">Yes!</button>
+        <button class="button-example_group2 button-example_group2--red">Cancel</button>
+<!--        <div class="button-example_background-box--gray">-->
+<!--            <button class="example-group2_button">Yes!</button>-->
+<!--            <button class="example-group2_button example-group2_button&#45;&#45;red">Cancel</button>-->
+<!--        </div>-->
+    </div>
+</body>
+</html>
