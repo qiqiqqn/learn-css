@@ -77,6 +77,55 @@
             padding: 16px;
             background-color: gray;
         }
+        .form-example_block {
+            width: 500px;
+            padding: 20px 0;
+        }
+        input {
+            font: inherit;
+        }
+        .form-example_label {
+            display: block;
+        }
+        .form-example_input {
+            display: block;
+            margin: 16px 0;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .form-example_tip {
+            position: relative;
+            padding: 8px;
+            display: inline-block;
+            border: 1px solid #bd4257;
+            border-radius: 5px;
+            background: #f8607a;
+            transform: translateY(-0.8em);
+        }
+        .form-example_tip::before {
+            content: "";
+            position: absolute;
+            top: -0.4em;
+            left: 1em;
+            padding: 0.35em;
+            background: #f8607a;
+            border: 1px solid #bd4257;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+        }
+        /*.form-example_tip::before {*/
+        /*    content: "";*/
+        /*    position: absolute;*/
+        /*    top: -0.3em;*/
+        /*    left: 1em;*/
+        /*    padding: 0.35em;*/
+        /*    background: inherit;*/
+        /*    border: inherit;*/
+        /*    border-right: 0;*/
+        /*    border-bottom: 0;*/
+        /*    transform: rotate(45deg);*/
+        /*}*/
     </style>
 </head>
 <body>
@@ -98,6 +147,14 @@
 <!--            <button class="example-group2_button">Yes!</button>-->
 <!--            <button class="example-group2_button example-group2_button&#45;&#45;red">Cancel</button>-->
 <!--        </div>-->
+        <h2>实现一个提示框</h2>
+        <form class="form-example_block">
+            <label class="form-example_label" for="username">请输入用户名:</label>
+            <input class="form-example_input" id="username" type="text" value="runting" />
+            <div class="form-example_tip">
+                只能输入字符和数字和下划线！
+            </div>
+        </form>
     </div>
 </body>
 </html>
